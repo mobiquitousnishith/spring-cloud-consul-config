@@ -1,2 +1,2 @@
 # spring-consul-config
-Spring Consul Config Demo
+Spring Consul Config Distribution Configuration
