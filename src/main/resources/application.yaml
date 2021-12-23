@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-cloud-consul-config
+  config:
+    import: 'consul:localhost:8500'
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        format: yaml
+        profile-separator: '::'
+        data-key: data
+        default-context: ${spring.application.name}
+        prefixes: config
+        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
